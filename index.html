@@ -39,46 +39,57 @@ color: white !important;
       width: 100%;
       height: auto;
     }
+
+    .navbar-colored {
+      background-color: #3f117cb0; /* Change this to the desired color */
+    }
+    
+    .tabz{
+      color:#3f117c;
+    }
+    .tabz:hover{
+      color: mediumorchid;
+    }
     </style>
 </head>
 <body>
   
   <!-- navbar -->
-<nav class="navbar navbar-expand-lg bg-transparent sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="logo/w_logo.png" width="160px" height="50px" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active   text-white ps-4" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white ps-4" href="painting.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Paintings
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Abstract paintings</a></li>
-            <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Landscape paintings</a></li>
-            <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Flower paintings</a></li>
-            <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Nature paintings</a></li>
-            <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Figurative paintings</a></li>
-            <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Religious paintings</a></li>
-          
-          </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link  text-white ps-4" href="about.html">About</a>
+  <nav class="navbar navbar-expand-lg  sticky-top" id="mainNavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="logo/w_logo.png" width="160px" height="50px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white ps-4" aria-current="page" href="index.html">Home</a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link  text-white ps-4" href="contact.html">Contact </a>
-        </li>
-      </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white ps-4" href="painting.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Paintings
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Abstract paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Landscape paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Flower paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Nature paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Figurative paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Religious paintings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-4" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-4" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+  
 
 
 <!-- carousel -->
@@ -140,14 +151,22 @@ color: white !important;
 
 
   <div class="container mt-5">
-    <ul class="nav nav-tabs justify-content-center" id="galleryTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">All</a>
+    <ul class="nav nav-tabs justify-content-center" id="galleryTab" role="tablist" >
+      <li class="nav-item" >
+        <a class="nav-link tabz active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">All</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nature</a>
+        <a class="nav-link tabz " id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nature</a>
       </li>
-      
+      <li class="nav-item">
+        <a class="nav-link tabz" id="tab2-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab2" aria-selected="false">People</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link tabz" id="tab2-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab2" aria-selected="false">Still Life</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link tabz" id="tab2-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab2" aria-selected="false">Street</a>
+      </li>
     </ul>
     <div class="tab-content" id="galleryTabContent">
       <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
@@ -178,6 +197,46 @@ color: white !important;
           </div>
         </div>
       </div>
+      <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab2-tab">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="image4.jpg" alt="Image 4" class="gallery-img">
+        </div>
+        <div class="col-md-4">
+          <img src="image5.jpg" alt="Image 5" class="gallery-img">
+        </div>
+        <div class="col-md-4">
+          <img src="image6.jpg" alt="Image 6" class="gallery-img">
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab2-tab">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="image4.jpg" alt="Image 4" class="gallery-img">
+      </div>
+      <div class="col-md-4">
+        <img src="image5.jpg" alt="Image 5" class="gallery-img">
+      </div>
+      <div class="col-md-4">
+        <img src="image6.jpg" alt="Image 6" class="gallery-img">
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab2-tab">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="image4.jpg" alt="Image 4" class="gallery-img">
+      </div>
+      <div class="col-md-4">
+        <img src="image5.jpg" alt="Image 5" class="gallery-img">
+      </div>
+      <div class="col-md-4">
+        <img src="image6.jpg" alt="Image 6" class="gallery-img">
+      </div>
+    </div>
+  </div>
+  </div>
       <!-- Add more tab panes if needed -->
     </div>
   </div>
@@ -346,11 +405,20 @@ color: white !important;
 
 
 
-
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // JavaScript for changing navbar color on scroll
+      window.addEventListener('scroll', function() {
+        var navbar = document.getElementById("mainNavbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("navbar-colored");
+        } else {
+          navbar.classList.remove("navbar-colored");
+        }
+      });
+    </script>
 
 </body>
 </html>

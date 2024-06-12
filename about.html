@@ -4,24 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/global.css" rel="stylesheet">
-  <link href="css/about.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <link rel="stylesheet" href="css/about.css">
 
+  <style>
+    .img-fluid {
+      margin-top: -100px;
 
+    }
+
+    .dropdown-item:hover {
+      background-color: #3f117cc0 !important;
+      color: white !important;
+    }
+
+    .btn-outline-warning {
+      border: 2px solid white !important;
+      color: white !important;
+    }
+
+    .btn-outline-warning:hover {
+      background-color: transparent !important;
+
+    }
+
+
+    .navbar-colored {
+      background-color: #3f117cb0;
+      /* Change this to the desired color */
+    }
+  </style>
 
 
 
@@ -32,7 +59,7 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-dark  sticky-top">
+  <nav class="navbar navbar-expand-lg  sticky-top" id="mainNavbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="logo/w_logo.png" width="160px" height="50px" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -42,7 +69,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active   text-white ps-4" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active text-white ps-4" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white ps-4" href="painting.html" role="button"
@@ -56,14 +83,13 @@
               <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Nature paintings</a></li>
               <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Figurative paintings</a></li>
               <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Religious paintings</a></li>
-
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link  text-white ps-4" href="about.html">About</a>
+            <a class="nav-link text-white ps-4" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  text-white ps-4" href="contact.html">Contact </a>
+            <a class="nav-link text-white ps-4" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -74,24 +100,18 @@
 
 
 
-  <!-- About Us -->
-  <section id="center" class="center_o bg_gray pt-2 pb-2">
-    <div class="container-xl">
-      <div class="row center_o1">
-        <div class="col-md-5">
-          <div class="center_o1l">
-            <h2 class="mb-0">About Us</h2>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="center_o1r text-end">
-            <h6 class="mb-0"><a href="#">Home</a> <span class="me-2 ms-2"><i class="fa fa-caret-right"></i></span> About
-              Us</h6>
-          </div>
-        </div>
-      </div>
+
+  <div class="container-fluid">
+    <img src="images/contact_2.jpg" class="img-fluid" alt="...">
+    <div class="card-img-overlay mt-5 text-center">
+      <h1 style="font-size: 100px;">About</h1>
     </div>
-  </section>
+  </div>
+
+
+
+
+
 
   <section id="about_pg" class="p_4">
     <div class="container-xl">
@@ -100,7 +120,8 @@
           <div class="about_pg1i row">
             <div class="col-md-3 p-0">
               <div class="about_pg1il">
-                <span class="bg_pink text-white rounded-circle text-center d-inline-block fs-1"><i
+                <span class="bg_pink text-white rounded-circle text-center d-inline-block fs-1">
+                  <i
                     class="fa fa-skyatlas"></i></span>
               </div>
             </div>
@@ -289,19 +310,9 @@
             </ul>
           </div>
         </div>
-<<<<<<< Updated upstream
       </div>
     </div>
   </section>
-=======
-      </nav>
-
-
-
-
-
-
->>>>>>> Stashed changes
 
   <section id="about_h" class="p_4 pt-0">
     <div class="container-xl">
@@ -338,23 +349,156 @@
       </div>
     </div>
   </section>
-  <!-- <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar_sticky = document.getElementById("navbar_sticky");
-        var sticky = navbar_sticky.offsetTop;
-        var navbar_height = document.querySelector('.navbar').offsetHeight;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky + navbar_height) {
-            navbar_sticky.classList.add("sticky")
-          document.body.style.paddingTop = navbar_height + 'px';
-          } else {
-            navbar_sticky.classList.remove("sticky");
-          document.body.style.paddingTop = '0'
-          }
-        }
-        </script> -->
+
+  <section id="footer" class="pt-3 pb-3">
+    <div class="container-fluid">
+      <div class="row footer_1">
+        <div class="col-md-3">
+          <div class="footer_1i">
+            <hr class="line_1">
+            <h5 class="mb-3">ABOUT</h5>
+            <p>Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec
+              imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris.</p>
+            <p>Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer_1i">
+            <hr class="line_1">
+            <h5 class="mb-3">RECENT WORKS</h5>
+            <div class="footer_1i1 row">
+              <div class="col-md-4 col-4 p-0">
+                <div class="footer_1i1i">
+                  <div class="grid clearfix">
+                    <figure class="effect-jazz mb-0">
+                      <a href="#"><img src="img/30.jpg" class="w-100" alt="abc"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-4 p-0">
+                <div class="footer_1i1i">
+                  <div class="grid clearfix">
+                    <figure class="effect-jazz mb-0">
+                      <a href="#"><img src="img/31.jpg" class="w-100" alt="abc"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-4 p-0">
+                <div class="footer_1i1i">
+                  <div class="grid clearfix">
+                    <figure class="effect-jazz mb-0">
+                      <a href="#"><img src="img/32.jpg" class="w-100" alt="abc"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer_1i1 row">
+              <div class="col-md-4 col-4 p-0">
+                <div class="footer_1i1i">
+                  <div class="grid clearfix">
+                    <figure class="effect-jazz mb-0">
+                      <a href="#"><img src="img/33.jpg" class="w-100" alt="abc"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-4 p-0">
+                <div class="footer_1i1i">
+                  <div class="grid clearfix">
+                    <figure class="effect-jazz mb-0">
+                      <a href="#"><img src="img/34.jpg" class="w-100" alt="abc"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-4 p-0">
+                <div class="footer_1i1i">
+                  <div class="grid clearfix">
+                    <figure class="effect-jazz mb-0">
+                      <a href="#"><img src="img/35.jpg" class="w-100" alt="abc"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer_1i">
+            <hr class="line_1">
+            <h5 class="mb-3">TAG CLOUD</h5>
+            <ul class="mb-0">
+              <li class="d-inline-block"><a class="d-block" href="#">Analyze</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Audio</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Blog</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Business</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Creative</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Design</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Experiment</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">News</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Expertize</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Express</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Share</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Sustain</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Video</a></li>
+              <li class="d-inline-block"><a class="d-block" href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer_1i">
+            <hr class="line_1">
+            <h5 class="mb-3">RECENT NEWS</h5>
+            <p class="font_14 mb-2"><a href="#">INTEGER AT DIAM GRAVIDA FRINGILLA NIBH PRETI PURUS</a></p>
+            <h6 class="col_light font_14"><i class="fa fa-clock-o col_pink me-1"></i> May 18 <a class="col_light"
+                href="#"><i class="fa fa-comment-o col_pink me-1 ms-3"></i> 2</a></h6>
+            <hr>
+            <p class="font_14 mb-2"><a href="#">DONEC QUIS EX VEL TINCIDUNT</a></p>
+            <h6 class="col_light font_14"><i class="fa fa-clock-o col_pink me-1"></i> July 19 <a class="col_light"
+                href="#"><i class="fa fa-comment-o col_pink me-1 ms-3"></i> 2</a></h6>
+            <hr>
+            <p class="font_14 mb-2"><a href="#">PRAESENT IACULIS TORTOR VIVERRA</a></p>
+            <h6 class="col_light font_14"><i class="fa fa-clock-o col_pink me-1"></i> June 17 <a class="col_light"
+                href="#"><i class="fa fa-comment-o col_pink me-1 ms-3"></i> 2</a></h6>
+          </div>
+        </div>
+      </div>
+      <div class="row footer_2 mt-4 text-center">
+        <div class="col-md-12">
+          <ul>
+            <li class="d-inline-block me-3 font_14"><a href="#">CONTACT</a></li>
+            <li class="d-inline-block me-3 font_14"><a href="#">PRIVACY POLICY</a></li>
+            <li class="d-inline-block me-3 font_14"><a href="#">TERMS OF USE</a></li>
+            <li class="d-inline-block font_14"><a href="#">FAQ</a></li>
+          </ul>
+          <p class="mb-0">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_pink"
+              href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript for changing navbar color on scroll
+    window.addEventListener('scroll', function () {
+      var navbar = document.getElementById("mainNavbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("navbar-colored");
+      } else {
+        navbar.classList.remove("navbar-colored");
+      }
+    });
+  </script>
+
+
 
 </body>
 

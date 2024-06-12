@@ -3,22 +3,29 @@
   height:120px;
   line-height:120px;
     }
-  .about_pg1il span:hover {
-  background: #252525;
+  .about_pg1il span{
+  background: #451582;
+  color: white;
     }
   .about_pg2i{
-  background:#111; 
-  border:1px solid #111;
+  background:#ffffff; 
+  border:1px solid #3f117cc0;
    }
   .about_pg2i:hover{
-  border:1px solid #323131;
-  background:none; 
+  border:1px solid #3f117cc0;
+  /* background:none;  */
    }
   .about_pg2i ul li a{
-  background: #252525;
+  background: #ffffff;
   border-radius:0; 
    }
   
+   .social-network{
+    list-style-type: none;
+    display: flex; 
+   color: black;
+
+   }
   /*********************about_end****************/
   
   

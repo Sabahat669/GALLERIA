@@ -1,64 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
-
-<title>Home</title>
-    <style>
-      .carousel{
-  margin-top: -100px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="Js/external.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-}
-.dropdown-item:hover{
-background-color: #3f117cc0 !important;
-color: white !important;
-}
-.btn-outline-warning{
-  border: 2px solid white !important;
-  color: white !important;
-}
-.btn-outline-warning:hover{
-  background-color:transparent !important;
- 
-}
-.carousel > .carousel-inner > .carousel-item > img{
-    
-    height:110vh;
-}
-.gallery-img {
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <title>Galleria | Home</title>
+  <style>
+    .carousel {
+      margin-top: -100px;
+
+    }
+
+    .dropdown-item:hover {
+      background-color: #3f117cc0 !important;
+      color: white !important;
+    }
+
+    .btn-outline-warning {
+      border: 2px solid white !important;
+      color: white !important;
+    }
+
+    .btn-outline-warning:hover {
+      background-color: transparent !important;
+
+    }
+
+    .carousel>.carousel-inner>.carousel-item>img {
+
+      height: -80px;
+    }
+
+    .gallery-img {
       width: 100%;
       height: auto;
     }
 
     .navbar-colored {
-      background-color: #3f117cb0; /* Change this to the desired color */
+      background-color: #3f117cb0;
+      /* Change this to the desired color */
     }
-    
-    .tabz{
-      color:#3f117c;
+
+    .tabz {
+      color: #3f117c;
     }
-    .tabz:hover{
+
+    .tabz:hover {
       color: mediumorchid;
     }
-    </style>
+  </style>
 </head>
+
 <body>
-  
+
+  <!-- header -->
+  <nav class="navbar bg-dark  mb-4">
+    <div class="container-fluid ">
+      <p>Canvas to Home... <a href="shop.html">Enjoy 10% Off</a> On Your Favorite Artworks!🎊🎨</p>
+      <div class="login-register-btn">
+        <a href="loginform.html">Login </a>
+      </div>
+      <div class="cart-btn">
+        <p><a href="shop.html"><i class="material-icons" style="font-size:25px">add_shopping_cart</i></a>0 / Rs0</p>
+      </div>
+    </div>
+  </nav>
+
+
+
+
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg  sticky-top" id="mainNavbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="logo/w_logo.png" width="160px" height="50px" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -67,16 +104,17 @@ color: white !important;
             <a class="nav-link active text-white ps-4" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white ps-4" href="painting.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white ps-4" href="painting.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Paintings
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="abstract.html">Abstract paintings</a></li>
-              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Landscape paintings</a></li>
-              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Flower paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="landscape.html">Landscape paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="flower.html">Flower paintings</a></li>
               <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="nature.html">Nature paintings</a></li>
-              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Figurative paintings</a></li>
-              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="#">Religious paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="figurative.html">Figurative paintings</a></li>
+              <li><a class="dropdown-item text-dark ps-4 pe-4 pt-2" href="religious.html">Religious paintings</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -89,362 +127,246 @@ color: white !important;
       </div>
     </div>
   </nav>
-  
 
 
-<!-- carousel -->
+
+  <!-- carousel -->
 
 
-<div class="main_2 clearfix">
+  <div class="main_2 clearfix">
     <section id="center" class="center_home">
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-   <div class="carousel-indicators">
-     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="" aria-current="true"></button>
-     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-   </div>
-   <div class="carousel-inner">
-     <div class="carousel-item active">
-       <img src="images/abstract-eye-portrait-.jpg" class="d-block w-100" alt="...">
-       <div class="carousel-caption d-md-block">
-          <h1 class="text-white font_60">Red Beauty Nature</h1>
-          <h4 class="text-white mt-3">Photography</h4>
-          <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
-          <button type="button" class="btn btn-outline-warning btn-lg">Explore</button>
-         
-       </div>
-     </div>
-     <div class="carousel-item">
-       <img src="images/illustrated-rendering-twin-avatar_23-2151061294.jpg" class="d-block w-100" alt="...">
-       <div class="carousel-caption d-md-block">
-          <h1 class="text-white font_60">Other Type Painting</h1>
-          <h4 class="text-white mt-3">Photography</h4>
-          <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
-          
-         
-       </div>
-     </div>
-     <div class="carousel-item">
-       <img src="images/pexels-kerber-1053687.jpg" class="d-block w-100 " alt="...">
-       <div class="carousel-caption d-md-block">
-          <h1 class="text-white font_60">Trending Art Picture</h1>
-          <h4 class="text-white mt-3">Photography</h4>
-          <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
-          
-         
-       </div>
-     </div>
-   </div>
-   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-     <span class="visually-hidden">Previous</span>
-   </button>
-   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-     <span class="visually-hidden">Next</span>
-   </button>
- </div>
- </section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"
+            class="" aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/carousel 1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h1 class="text-white font_60">Red Beauty Nature</h1>
+              <h4 class="text-white mt-3">Photography</h4>
+              <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is
+                reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty
+                of a woman grows with the passing years.</p>
+              <button type="button" class="btn btn-outline-warning btn-lg">Explore</button>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel 2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h1 class="text-white font_60">Other Type Painting</h1>
+              <h4 class="text-white mt-3">Photography</h4>
+              <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is
+                reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty
+                of a woman grows with the passing years.</p>
+
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel 3.jpg" class="d-block w-100 " alt="...">
+            <div class="carousel-caption d-md-block">
+              <h1 class="text-white font_60">Trending Art Picture</h1>
+              <h4 class="text-white mt-3">Photography</h4>
+              <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is
+                reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty
+                of a woman grows with the passing years.</p>
+
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
   </div>
 
 
-
-
-  <!-- <div class="container mt-5">
-    <ul class="nav nav-tabs justify-content-center" id="galleryTab" role="tablist" >
-      <li class="nav-item" >
-        <a class="nav-link tabz active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">All</a>
+  <div class="container mt-5 d-flex justify-content-center mb-5 ">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-home"
+          aria-selected="true">Home</button>
       </li>
-      <li class="nav-item">
-        <a class="nav-link tabz " id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Nature</a>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-profile"
+          aria-selected="false">Profile</button>
       </li>
-      <li class="nav-item">
-        <a class="nav-link tabz" id="tab2-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab2" aria-selected="false">People</a>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-contact"
+          aria-selected="false">Contact</button>
       </li>
-      <li class="nav-item">
-        <a class="nav-link tabz" id="tab2-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab2" aria-selected="false">Still Life</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link tabz" id="tab2-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab2" aria-selected="false">Street</a>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+          type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-disabled"
+          aria-selected="false" disabled>Disabled</button>
       </li>
     </ul>
-    <div class="tab-content mt-5" id="galleryTabContent">
-      <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab"> -->
-        <!-- Gallery for Tab 1 -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">...</div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...
+      </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...
+      </div>
+      <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+        ...</div>
+    </div>
+
+  </div>
 
 
-<div class="container mt-5 d-flex justify-content-center mb-5 " >
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
-        </div>
 
+
+
+  <!-- heading -->
+
+  <div class="container-fluid p-5 text-dark text-center ">
+    <h1 style="font-size:6vw">Gallery</h1>
+    <hr style="border-bottom: 1px solid black;">
+    <div class="box-heading"><b>Variety Of Painting Colors</b></div>
+    <br>
+
+
+
+
+    <!-- Gallery -->
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img src="images/index botttom/download.webp" class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water" />
+
+        <img src="images/index botttom/b.jpg" class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape" />
       </div>
 
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="images/index botttom/c.jpg" class="w-100 shadow-1-strong rounded mb-4"
+          alt="Mountains in the Clouds" />
 
+        <img src="images/index botttom/d" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+      </div>
 
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="images/index botttom/e.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
 
-
-
-
-
-
-
+        <img src="images/index botttom/f.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+      </div>
+    </div>
  
 
+    <!-- back-to-top -->
+    <button id="back-to-top" title="Go to top">Top</button>
+    <script>
+      let mybutton = document.getElementById("back-to-top");
+      window.onscroll = function () { scrollFunction() };
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      mybutton.onclick = function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+    </script>
 
 
 
-<!-- heading -->
-
- <div class="container-fluid p-5 text-dark text-center ">
-  <h1 style="font-size:6vw">Gallery</h1>
-  <hr style="border-bottom: 1px solid black;">
-  <div class="box-heading"><b>Variety Of Painting Colors</b></div>
-  <br>
-
-
-
-
-<!-- Gallery -->
-<div class="row">
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-    <img
-      src="images/index botttom/download.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-
-    <img
-      src="images/index botttom/b.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="images/index botttom/c.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
-    />
-
-    <img
-      src="images/index botttom/d"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="images/index botttom/e.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
-    />
-
-    <img
-      src="images/index botttom/f.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
-    />
-  </div>
-</div>
-<!-- Gallery -->
-
-
-
-
-
-
-
-
-  <!-- cards
-  <div class="wrapper">
-    <div class="card">
-      <img src="images/hover images/360_F_573695700_oqLeByUUoo6Nv6MVgtzSNjEHlrPteADv.jpg">
-      <div class="info">
-        <h1>Acrylic Color</h1>
-        <p>
-          Versatile, fast-drying paint used for a variety of surfaces.
-        </p>
-        <button type="submit"> <a href="AcrylicColor.html">View Details</a></button>
-      </div>
-    </div>
-    
-    <div class="card">
-      <img src="new/ball point pen painting 1">
-      <div class="info">
-        <h1>Ball Point Pen</h1>
-        <p>
-          Ink-based writing instrument suitable for detailed artwork.
-        </p>
-        <button type="submit"> <a href="BallPointPen.html">View Details</a></button>
-      </div>
-    </div>
-  
-    
-    <div class="card">
-      <img src="new/Charcoal Painting 1.avif">
-      <div class="info">
-        <h1>Charcoal</h1>
-        <p>
-          Provides deep, rich blacks ideal for sketches and shading.
-        </p>
-        <button type="submit"> <a href="Charcoal.html">View Details</a></button>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-  <div class="card">
-    <img src="new/oil painting 1.jpg">
-    <div class="info">
-      <h1>Oil colour</h1>
-      <p>
-        Slow-drying paint that allows for blending and detailed work.
-      </p>
-      <button type="submit"> <a href="Oilcolour.html">View Details</a></button>
-    </div>
-  </div>
-<div class="card">
-  <img src="new/water color 1.jpg">
-  <div class="info">
-    <h1>Water colour</h1>
-    <p>
-      Transparent, water-soluble paint perfect for delicate washes.
-    </p>
-    <button type="submit"> <a href="Watercolour.html">View Details</a></button>
-  </div>
-</div>
-<div class="card">
-  <img src="new/street art 3.jpg">
-  <div class="info">
-    <h1>Street Art</h1>
-    <p>
-      Opaque paint used for bold, vibrant artwork.
-    </p>
-    <button type="submit"> <a href="StreetArt.html">View Details</a></button>
-  </div>
-</div>
-</div>
- -->
-
-
-<!-- footer -->
-<footer class="footer mt-5">
-  <div class="container">
-      <div class="row">
+    <!-- footer -->
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
           <div class="logo col-md-3 ">
-              <img src="logo/logo colo1.png" alt="galleria Logo" class="galleria-logo" width="200px" height="70px">
-              <div class="contact-info mt-5">
-                  <p><i class="fas fa-map-marker-alt"> <a href="#">Karachi, Pakistan</a></i>
-                  </p>
-                  <p><i class="fas fa-phone-alt"><a href="#">Phone: (0336) 228-8771</a></i>
-                  </p>
-                  <p><i class="fas fa-envelope"><a href="#">Email:
-                              info@galleria.com.pk</a></i>
-                  </p>
-              </div>
+            <img src="logo/logo colo1.png" alt="galleria Logo" class="galleria-logo" width="200px" height="70px">
+            <div class="contact-info mt-5">
+              <p><i class="fas fa-map-marker-alt"> <a href="#">Karachi, Pakistan</a></i>
+              </p>
+              <p><i class="fas fa-phone-alt"><a href="#">Phone: (0336) 228-8771</a></i>
+              </p>
+              <p><i class="fas fa-envelope"><a href="#">Email:
+                    info@galleria.com.pk</a></i>
+              </p>
+            </div>
           </div>
           <div class="col-md-3 ">
-              <h5>OUR CATEGORIES</h5>
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Paintings</a></li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
+            <h5>OUR CATEGORIES</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Paintings</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
           <div class="col-md-3 ">
-              <h5>USEFUL LINKS</h5>
-              <ul>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Returns</a></li>
-                  <li><a href="#">Order Tracking</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Our Sitemap</a></li>
-              </ul>
+            <h5>USEFUL LINKS</h5>
+            <ul>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Our Sitemap</a></li>
+            </ul>
           </div>
           <div class="col-md-3 ">
-              <h5>NEWSLETTER</h5>
-              <div class="newsletter">
-                  <form id="newsletter-form">
-                      <input type="email" id="newsletter-email"
-                          placeholder="Your email address" required>
-                      <button class="btn btn-primary" style="margin-left: 250px;" type="button">Subscribe</button>
-                  </form>
-              </div>
-              <div class="currency-selector">
-                  <select class="form-control mt-3">
-                      <option>United States (US) dollar ($) - USD</option>
-                      <option>Euro (€) - EUR</option>
-                      <option>British Pound (£) - GBP</option>
-                  </select>
-              </div>
+            <h5>NEWSLETTER</h5>
+            <div class="newsletter">
+              <form id="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                <button class="btn btn-primary" style="margin-left: 250px;" type="button">Subscribe</button>
+              </form>
+            </div>
+            <div class="currency-selector">
+              <select class="form-control mt-3">
+                <option>United States (US) dollar ($) - USD</option>
+                <option>Euro (€) - EUR</option>
+                <option>British Pound (£) - GBP</option>
+              </select>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  <div class="container justify-content-center">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Galleria</span></strong>. All Rights Reserved
+      <div class="container justify-content-center">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Galleria</span></strong>. All Rights Reserved
+        </div>
       </div>
-    </div>
-</footer>
-
-
-
-
-<!-- back top -->
-<a href="#" class="back-to-top">
-  <i class="fa-solid fa-palette"></i>
-</a>
-
-
-
-<!-- cookies -->
-<div class="cookie-consent-banner">
-  <div class="message">
-      We use cookies to improve your experience on our website. By browsing this website, you
-      agree to our use of
-      cookies.
+    </footer>
+    <!-- cookies -->
+    <div class="cookie-banner" id="cookieBanner">
+      <p>We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies. <a href="#">MORE INFO</a></p>
+      <button onclick="acceptCookies()">ACCEPT</button>
   </div>
-  <div class="buttons">
-      <a href="#">MORE INFO</a>
-      <button class="btn-accept" onclick="acceptCookies()">ACCEPT</button>
-  </div>
-</div>
 
-<script>
-  window.addEventListener('scroll', function() {
-  var navbar = document.getElementById("mainNavbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("navbar-colored");
-  } else {
-    navbar.classList.remove("navbar-colored");
-  }
-});
-</script>
-
-
+  <script>
+      function acceptCookies() {
+          document.getElementById('cookieBanner').style.display = 'none';
+      }
+  </script>
 
 </body>
+
 </html>

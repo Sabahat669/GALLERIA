@@ -1,233 +1,134 @@
-body{
-font-family: 'Fraunces', serif;
-    color:  #fff;
-    letter-spacing: 0.5px;
-    margin: 2px 0;
-    padding: 2px 0;
+body {
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  letter-spacing: 0.5px;
 }
 
-.carousel-caption{
-    text-align:left;
-    background-color: rgba(52, 5, 78, 0.479);
-    padding:200px 150px;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:100%;
-    color:#fff;
-     }
-    .carousel-caption p{
-    width:45%;
-     }
-    .carousel-indicators{
-    bottom:0; 
-     }
-    .center_home .carousel-indicators [data-bs-target] {
-     background-color:  rgba(255, 255, 255, 0.479);
-    }
-    
-    @media screen and (max-width : 767px){
-    .center_home img{
-    min-height:350px; 
-     }
-    .carousel-caption {
-    text-align: center;
-    left:0;
-    width:100%;
-    bottom:0;
-    padding:10px;
-    }
-    .carousel-caption .font_60{
-    font-size:28px; 
-     }
-    .carousel-caption h4{
-    font-size:20px; 
-     }
-    .carousel-caption p{
-    font-size:14px;
-    text-align:left;
-    width:100%; 
-     }}
-    @media (min-width:768px) and (max-width:991px) {
-    .center_home img{
-    min-height:500px; 
-     }
-    .carousel-caption .font_60{
-    font-size:45px; 
-     }
-    .carousel-caption {
-    padding: 100px 100px;
-    }
-    .carousel-caption p{
-    width:60%;
-    }
- 
-    
-     }
-    
-    @media (min-width:992px) and (max-width:1200px) {
-    .carousel-caption{
-    padding:100px 100px;
-     }
-    .center_home img{
-    min-height:550px; 
-     }
- 
-     }
-    @media (min-width:1201px) and (max-width:1255px) {
-    
-     }
-    .box-heading {
-      margin-bottom: 10px;
-      font-size: 20px;
-      font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-      color: #000;
-      text-align: center;
-      text-transform: uppercase;
-      padding-top: 15px;
-  }
+.navbar p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 30px;
+  color: white;
+  font-size: 17px;
+}
 
-  
-  
-  .wrapper {
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    gap: 20px;
-  }
-  
-  .card {
-    width: 400px;
-    height: 300px;
-    border: solid 3px #27272745;
-    border-radius: 19px;
-    padding: 1.5rem;
-    background: white;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    transition: 0.6s ease-out;
-    box-shadow: 0px 7px 10px rgba(52, 5, 78, 0.501);
-    overflow: hidden;
-    cursor: pointer;
-  }
-  .card:hover {
-    transform: translateY(20px);
-  }
-  
-  .card:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0;
-  }
-  .card:hover:before {
-    opacity: 1;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 15px;
-  }
-  
-  .card .info {
-    position: relative;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: 0.5s;
-  }
-  .card:hover .info {
-    opacity: 0.7;
-    transform: translateY(-15px);
-  }
-  .card .info h1 {
-    margin: 0px;
-  }
-  
-  .card .info p {
-    letter-spacing: 1px;
-    font-size: 15px;
-    margin-top: 8px;
-  }
-  
-  .card .info button {
-    padding: 0.6rem;
-    outline: none;
-    border: none;
-    border-radius: 30px;
-    background: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.6s ease;
-  }
-  
-  .card .info button:hover {
-    background: #daeeed;
-    color: rgb(125, 125, 125);
-  }
+.login-register-btn {
+  margin-left: 43.5%;
+  font-size: 20px;
+}
 
+.login-register-btn :hover {
+  color: #ffffff;
+}
 
-/* cookie */
-.cookie-consent-banner {
-  position: fixed;
+.cart-btn {
+  margin-right: 7%;
+  font-size: 25px;
+}
+
+.cart-btn :hover {
+  color: #fdfdfd;
+
+}
+
+.carousel-caption {
+  text-align: left;
+  background-color: rgba(52, 5, 78, 0.479);
+  padding: 200px 150px;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f9f9f9;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  z-index: 1000;
-}
-
-.cookie-consent-banner .message {
-  font-size: 14px;
-  color: #333;
-}
-
-.cookie-consent-banner .buttons {
-  display: flex;
-  align-items: center;
-}
-
-.cookie-consent-banner .buttons a {
-  margin-right: 20px;
-  font-size: 14px;
-  color: #666;
-  text-decoration: none;
-  border-bottom: 1px solid #666;
-}
-
-.cookie-consent-banner .buttons .btn-accept {
-  background-color: #542999fd;
+  height: 100%;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
 }
+
+.carousel-caption p {
+  width: 45%;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+.center_home .carousel-indicators [data-bs-target] {
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+@media screen and (max-width : 767px) {
+  .center_home img {
+    min-height: 350px;
+  }
+
+  .carousel-caption {
+    text-align: center;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+  }
+
+  .carousel-caption .font_60 {
+    font-size: 28px;
+  }
+
+  .carousel-caption h4 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .center_home img {
+    min-height: 500px;
+  }
+
+  .carousel-caption .font_60 {
+    font-size: 45px;
+  }
+
+  .carousel-caption {
+    padding: 100px 100px;
+  }
+
+  .carousel-caption p {
+    width: 60%;
+  }
+
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+  .carousel-caption {
+    padding: 100px 100px;
+  }
+
+  .center_home img {
+    min-height: 550px;
+  }
+
+}
+
+@media (min-width:1201px) and (max-width:1255px) {}
+
+.box-heading {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+
 
 /* footer */
 
@@ -292,118 +193,91 @@ font-family: 'Fraunces', serif;
   border: 3px solid #542999fd;
   margin-top: 10px;
 }
+
 .footer .copyright {
-text-align: center;
-padding-top: 30px;
-}
-
-
-/* <!-- back top --> */
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  display: block;
-  /* hide by default */
-}
-
-.back-to-top.show {
-  display: block;
-}
-
-.back-to-top i {
-  font-size: 40px;
-  color: #542999fd;
-  transition: color 0.2s ease;
-}
-
-.back-to-top:hover i {
-  color: #54299973;
-}
-
-/* tabz */
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
   text-align: center;
-  cursor: default;
-  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-  background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+  padding-top: 30px;
 }
 
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  padding: 3em;
-  text-align: left;
-}
-
-.hovereffect img {
-  display: block;
-  position: relative;
-  max-width: none;
-  width: calc(100% + 60px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-  transition: opacity 0.35s, transform 0.45s;
-  -webkit-transform: translate3d(-40px,0,0);
-  transform: translate3d(-40px,0,0);
-}
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  position: relative;
-  font-size: 17px;
-  background-color: transparent;
-  padding: 15% 0 10px 0;
-  text-align: left;
-}
-
-.hovereffect .overlay:before {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+/* styles.css */
+#back-to-top {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed position */
   bottom: 20px;
-  left: 20px;
-  border: 1px solid #fff;
-  content: '';
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-  transition: opacity 0.35s, transform 0.45s;
-  -webkit-transform: translate3d(-20px,0,0);
-  transform: translate3d(-20px,0,0);
+  /* Place the button 20px from the bottom */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #000;
+  /* Black background */
+  color: white;
+  /* White text */
+  cursor: pointer;
+  /* Pointer/hand icon */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-  transition: opacity 0.35s, transform 0.45s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
+#back-to-top:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
 
-.hovereffect:hover img {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px -2px 5px rgba(0,0,0,0.1);
+  padding: 15px 10px;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.hovereffect:hover .overlay:before,
-.hovereffect:hover a, .hovereffect:hover p {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+.cookie-banner p {
+  margin: 0;
+  flex: 1;
+}
+.cookie-banner a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cookie-banner button {
+  background-color: #542999fd;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.cookie-banner button:hover {
+  background-color: #542999e3;
+  color: white;
+  font-size: 14px;
+}
+@media (min-width: 600px) {
+  .cookie-banner {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .cookie-banner button {
+      margin-top: 0;
+      margin-left: 20px;
+  }
 }

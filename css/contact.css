@@ -11,7 +11,12 @@ body {
   color: white;
   font-size: 17px;
 }
-
+.navbar-brand img {
+  margin-left: 40px;
+}
+.navbar-collapse{
+  margin-right: 40px;
+}
 .login-register-btn {
   margin-left: 43.5%;
   font-size: 20px;
@@ -36,19 +41,18 @@ body {
   color: #ffffff !important;
   width: 100% !important;
 }
+
 ul {
   list-style: none;
   padding: 0;
 }
 
 p {
-
   letter-spacing: 0;
 }
 
 a {
   text-decoration: none;
-  /* color:#ddd; */
 }
 
 a:hover {
@@ -288,6 +292,7 @@ hr {
 .sticky .drop_1 {
   margin-top: 14px !important;
 }
+
 .pages {
   margin-top: 35px;
 }
@@ -322,7 +327,7 @@ hr {
   color: #fff;
 }
 
-/* footer social icons */
+
 ul.social-network {
   list-style: none;
   display: block;
@@ -333,6 +338,7 @@ ul.social-network {
 ul.social-network li {
   display: inline-block;
 }
+
 .social-network a.icoRss:hover {
   background-color: #F56505;
 }
@@ -750,37 +756,37 @@ a.socialIcon:hover,
   padding-top: 30px;
 }
 
-/* styles.css */
+
 #back-to-top {
   display: none;
-  /* Hidden by default */
+
   position: fixed;
-  /* Fixed position */
+
   bottom: 20px;
-  /* Place the button 20px from the bottom */
+
   right: 30px;
-  /* Place the button 30px from the right */
+
   z-index: 99;
-  /* Make sure it does not overlap */
+
   border: none;
-  /* Remove borders */
+
   outline: none;
-  /* Remove outline */
+
   background-color: #542999fd;
-  /* Black background */
+
   color: white;
-  /* White text */
+
   cursor: pointer;
-  /* Pointer/hand icon */
+
   padding: 15px;
-  /* Some padding */
+
   border-radius: 10px;
-  /* Rounded corners */
+
   font-size: 18px;
-  /* Increase font size */
+
 }
 
 #back-to-top:hover {
   background-color: #542999d0;
-  /* Add a dark-grey background on hover */
+
 }

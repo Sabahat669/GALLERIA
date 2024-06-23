@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="Js/external.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
@@ -39,17 +39,12 @@
 
     .btn-outline-warning {
       border: 2px solid white !important;
-      color: white !important;
-    }
-
-    .btn-outline-warning:hover {
-      background-color: transparent !important;
 
     }
 
     .carousel>.carousel-inner>.carousel-item>img {
-
-      height: -80px;
+      width: 100vh;
+      height: 100vh;
     }
 
     .gallery-img {
@@ -58,8 +53,7 @@
     }
 
     .navbar-colored {
-      background-color: #3f117cb0;
-      /* Change this to the desired color */
+      background-color: #3f117cb0 !important;
     }
 
     .tabz {
@@ -79,7 +73,7 @@
     <div class="container-fluid">
       <p>Canvas to Home... <a href="shop.html">Enjoy 10% Off</a> On Your Favorite Artworks!🎊🎨</p>
       <div class="login-register-btn">
-        <a href="loginform.html">Login </a>
+        <a href="loginform.html" style="text-decoration: none;">Login </a>
       </div>
       <div class="cart-btn">
         <p><a href="shop.html"><i class="material-icons" style="font-size:25px">add_shopping_cart</i></a>0 / Rs0</p>
@@ -131,78 +125,73 @@
 
 
   <!-- carousel -->
-
-
-  <div class="main_2 clearfix">
-    <section id="center" class="center_home">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"
-            class="" aria-current="true"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="images/carousel 1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 style="color: white;font-weight: 800; font-size: 30px; margin-top: 30px;">"The Passion of Painting Lovers"
+          </h3>
+          <p
+            style="color: white; max-width: 50%; margin-top: 50px ; margin-left: 25%; font-family: 'Times New Roman', Times, serif; font-weight: 500; font-size: 25px;">
+            Art / Painting lovers find beauty in every brushstroke, savoring the depth and emotion in each
+            piece. They journey through galleries and museums, absorbing the rich tapestry of human expression. With
+            keen eyes and open hearts, they celebrate creativity and the stories it tells. For them, art is a timeless
+            connection to the soul of humanity.
+          </p><button type="button" class="btn btn-outline-warning"><a href="abstract.html">Read More</a></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/carousel 1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1 class="text-white font_60">Red Beauty Nature</h1>
-              <h4 class="text-white mt-3">Photography</h4>
-              <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is
-                reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty
-                of a woman grows with the passing years.</p>
-              <button type="button" class="btn btn-outline-warning btn-lg">Explore</button>
-
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/carousel 2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1 class="text-white font_60">Other Type Painting</h1>
-              <h4 class="text-white mt-3">Photography</h4>
-              <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is
-                reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty
-                of a woman grows with the passing years.</p>
-
-
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/carousel 3.jpg" class="d-block w-100 " alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1 class="text-white font_60">Trending Art Picture</h1>
-              <h4 class="text-white mt-3">Photography</h4>
-              <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is
-                reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty
-                of a woman grows with the passing years.</p>
-
-
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </section>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/carousel 2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 style="color: white;font-weight: 800; font-size: 30px; margin-top: 30px;">"The Enchantment of Art
+            Exhibitions"</h3>
+          <p
+            style="color: white; max-width: 50%; margin-top: 50px ; margin-left: 25%; font-family: 'Times New Roman', Times, serif; font-weight: 500; font-size: 25px;">
+            Art / Painting exhibitions ignite a passion for creativity, unveiling the depths of human imagination. They
+            connect hearts through vibrant colors and profound expressions. Each piece tells a unique story, inviting
+            viewers into a world of wonder. This shared experience fosters a deep appreciation for the beauty and
+            diversity of artistic endeavors.</p>
+          <button type="button" class="btn btn-outline-warning"><a href="about.html">Explore</a>
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel 3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 style="color: white;font-weight: 800; font-size: 30px; margin-top: 30px;">
+            "Palette of Imagination"</h3>
+          <p
+            style="color: white; max-width: 50%; margin-top: 50px ; margin-left: 25%; font-family: 'Times New Roman', Times, serif; font-weight: 500; font-size: 25px;">
+            Art painting competitions ignite creativity and skill, showcasing diverse talents and perspectives.
+            Participants blend technique with imagination, creating canvases that tell stories and evoke emotions.
+            Such events celebrate art's transformative power, inspiring both artists and audiences alike.</p><button
+            type="button" class="btn btn-outline-warning"><a href="contact.html">Subscribe</a></button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-
 
   <div class="container mt-5 d-flex justify-content-center mb-5 ">
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-          type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-home"
-          aria-selected="true">Home</button>
+        <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-home" type="button" style="background-color: #3f117c;" role="tab"
+          aria-controls="pills-home" aria-selected="true">Home</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
@@ -271,7 +260,7 @@
         <img src="images/index botttom/f.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
       </div>
     </div>
- 
+
 
     <!-- back-to-top -->
     <button id="back-to-top" title="Go to top"><i class="material-icons">palette</i></button>
@@ -299,7 +288,8 @@
       <div class="container">
         <div class="row">
           <div class="logo col-md-3 ">
-            <img src="logo/logo colo1.png" alt="galleria Logo" class="galleria-logo" width="200px" height="70px">
+            <img src="logo/galleria color logo.png" alt="galleria Logo" class="galleria-logo" width="200px"
+              height="70px">
             <div class="contact-info mt-5">
               <p><i class="fas fa-map-marker-alt"> <a href="#">Karachi, Pakistan</a></i>
               </p>
@@ -313,11 +303,10 @@
           <div class="col-md-3 ">
             <h5>OUR CATEGORIES</h5>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Paintings</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="abstract.html">Paintings</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-md-3 ">
@@ -325,9 +314,7 @@
             <ul>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Order Tracking</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="faqs.html">FaQs</a></li>
               <li><a href="#">Our Sitemap</a></li>
             </ul>
           </div>
@@ -357,15 +344,20 @@
     </footer>
     <!-- cookies -->
     <div class="cookie-banner" id="cookieBanner">
-      <p>We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies. <a href="#">MORE INFO</a></p>
+      <p>We use cookies to improve your experience on our website. By browsing this website, you agree to our use of
+        cookies. <a href="#">MORE INFO</a></p>
       <button onclick="acceptCookies()">ACCEPT</button>
-  </div>
+    </div>
 
-  <script>
+    <script>
       function acceptCookies() {
-          document.getElementById('cookieBanner').style.display = 'none';
+        document.getElementById('cookieBanner').style.display = 'none';
       }
-  </script>
+    </script>
+
+
+
+
 
 </body>
 

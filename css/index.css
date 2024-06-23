@@ -12,9 +12,13 @@ body {
   color: white;
   font-size: 17px;
 }
- .navbar-collapse{
+
+.navbar-brand img {
+  margin-left: 40px;
+}
+.navbar-collapse{
   margin-right: 40px;
-} 
+}
 .login-register-btn {
   margin-left: 43.5%;
   font-size: 20px;
@@ -36,7 +40,6 @@ body {
 }
 
 .carousel-caption {
-  text-align: left;
   background-color: rgba(52, 5, 78, 0.500);
   padding: 200px 150px;
   bottom: 0;
@@ -46,8 +49,9 @@ body {
   color: #fff;
 }
 
-.carousel-caption p {
-  width: 45%;
+.carousel-caption p h5 {
+margin-top: 60%;
+  text-align: center;
 }
 
 .carousel-indicators {
@@ -200,39 +204,24 @@ body {
   padding-top: 30px;
 }
 
-/* styles.css */
 #back-to-top {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed position */
   bottom: 20px;
-  /* Place the button 20px from the bottom */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   background-color: #542999fd;
-  /* Black background */
   color: white;
-  /* White text */
   cursor: pointer;
-  /* Pointer/hand icon */
   padding: 15px;
-  /* Some padding */
   border-radius: 10px;
-  /* Rounded corners */
   font-size: 18px;
-  /* Increase font size */
 }
 
 #back-to-top:hover {
   background-color: #542999d0;
-  /* Add a dark-grey background on hover */
 }
 
 .cookie-banner {
@@ -241,7 +230,7 @@ body {
   left: 0;
   width: 100%;
   background-color: white;
-  box-shadow: 0px -2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
   padding: 15px 10px;
   text-align: center;
   z-index: 1000;
@@ -249,15 +238,18 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .cookie-banner p {
   margin: 0;
   flex: 1;
 }
+
 .cookie-banner a {
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
+
 .cookie-banner button {
   background-color: #542999fd;
   border: none;
@@ -267,18 +259,24 @@ body {
   font-size: 14px;
   margin-top: 10px;
 }
+
 .cookie-banner button:hover {
   background-color: #542999e3;
   color: white;
   font-size: 14px;
 }
+
 @media (min-width: 600px) {
   .cookie-banner {
-      flex-direction: row;
-      justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
   .cookie-banner button {
-      margin-top: 0;
-      margin-left: 20px;
+    margin-top: 0;
+    margin-left: 20px;
   }
 }
+
+
+

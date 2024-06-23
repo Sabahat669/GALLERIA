@@ -14,7 +14,12 @@ body {
   color: white;
   font-size: 17px;
 }
-
+.navbar-brand img {
+  margin-left: 40px;
+}
+.navbar-collapse{
+  margin-right: 40px;
+}
 .login-register-btn {
   margin-left: 43.5%;
   font-size: 20px;

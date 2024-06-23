@@ -14,10 +14,14 @@ body {
   color: white;
   font-size: 17px;
 }
-.navbar-collapse{
+
+.navbar-brand img {
   margin-left: 40px;
+}
+.navbar-collapse{
   margin-right: 40px;
 }
+
 .login-register-btn {
   margin-left: 43.5%;
   font-size: 20px;
@@ -46,7 +50,7 @@ body {
 
 .about_pg1il span {
   background: #451582;
-  color: white;
+  color: #fff;
 }
 
 .about_pg2i {
@@ -61,6 +65,15 @@ body {
 .about_pg2i ul li a {
   background: #ffffff;
   border-radius: 0;
+}
+.about_pg2i a i{
+  background-color: #451582;
+  border: 5px solid #3f117cc0;
+  color: #fff;
+}
+.about_pg2i a i:hover{
+  background-color: #451582;
+  color: #fff;
 }
 
 .social-network {
@@ -227,37 +240,21 @@ body {
 }
 
 
-/* styles.css */
 #back-to-top {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed position */
   bottom: 20px;
-  /* Place the button 20px from the bottom */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   background-color: #542999fd;
-  /* Black background */
   color: white;
-  /* White text */
   cursor: pointer;
-  /* Pointer/hand icon */
   padding: 15px;
-  /* Some padding */
   border-radius: 10px;
-  /* Rounded corners */
   font-size: 18px;
-  /* Increase font size */
 }
-
 #back-to-top:hover {
   background-color: #542999d0;
-  /* Add a dark-grey background on hover */
 }

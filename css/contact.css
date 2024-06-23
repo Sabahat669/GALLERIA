@@ -5,13 +5,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #fff;
   letter-spacing: 0.5px;
 }
 
 .navbar p {
   margin-top: 6px;
-  margin-bottom: 6px;
   margin-left: 30px;
   color: white;
   font-size: 17px;

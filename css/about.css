@@ -21,6 +21,7 @@ body {
 .login-register-btn {
   margin-left: 43.5%;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .login-register-btn :hover {
@@ -242,7 +243,7 @@ body {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #000;
+  background-color: #542999fd;
   /* Black background */
   color: white;
   /* White text */
@@ -257,6 +258,6 @@ body {
 }
 
 #back-to-top:hover {
-  background-color: #555;
+  background-color: #542999d0;
   /* Add a dark-grey background on hover */
 }

@@ -1,7 +1,4 @@
-
-
 body {
-
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -9,7 +6,7 @@ body {
 }
 
 .navbar p {
-  margin-top: 6px;
+  margin-bottom: 0%;
   margin-left: 30px;
   color: white;
   font-size: 17px;
@@ -45,7 +42,7 @@ ul {
 }
 
 p {
-  /* color:#ddd; */
+
   letter-spacing: 0;
 }
 
@@ -212,7 +209,6 @@ hr {
   content: "";
 }
 
-/*********************header****************/
 .main_1 {
   z-index: 2;
 }
@@ -292,11 +288,6 @@ hr {
 .sticky .drop_1 {
   margin-top: 14px !important;
 }
-
-/*********************header_end****************/
-
-
-/*********************common****************/
 .pages {
   margin-top: 35px;
 }
@@ -342,8 +333,6 @@ ul.social-network {
 ul.social-network li {
   display: inline-block;
 }
-
-/* footer social icons */
 .social-network a.icoRss:hover {
   background-color: #F56505;
 }
@@ -446,9 +435,6 @@ a.socialIcon:hover,
   padding-top: 10px;
 }
 
-/*********************common_end****************/
-
-/*********************footer****************/
 #footer {
   border-top: 1px solid #323131;
 }
@@ -469,9 +455,6 @@ a.socialIcon:hover,
   color: #fff;
 }
 
-/*********************footer_end****************/
-
-/*********************contact****************/
 .contact_1r ul li a {
   background: #252525;
   border-radius: 0;
@@ -487,9 +470,6 @@ a.socialIcon:hover,
   height: 160px;
 }
 
-/*********************contact_end****************/
-
-/*********************about_h************/
 .about_h1r .form-control {
   background-color: #252525;
   border-color: #252525;
@@ -507,7 +487,6 @@ a.socialIcon:hover,
   color: rgb(52, 5, 78);
 }
 
-/*********************about_h_end****************/
 
 
 @media screen and (max-width : 767px) {
@@ -787,7 +766,7 @@ a.socialIcon:hover,
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #000;
+  background-color: #542999fd;
   /* Black background */
   color: white;
   /* White text */
@@ -802,6 +781,6 @@ a.socialIcon:hover,
 }
 
 #back-to-top:hover {
-  background-color: #555;
+  background-color: #542999d0;
   /* Add a dark-grey background on hover */
 }

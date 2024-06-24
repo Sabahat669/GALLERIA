@@ -205,6 +205,8 @@
     <div class="image-grid">
       <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
       <div class="image category2"><img src="images/people  250px  (1).jpg" alt="Image 2"></div>
+      <div class="image category3"><img src="images/street art 6.jpg" alt="Image 3"></div>
+      <div class="image category1"><img src="images/still life (4).jpg" alt="Image 4"></div>
 
     </div>
   </div>
@@ -213,7 +215,8 @@
     <div class="image-grid">
       <div class="image category3"><img src="images/street art 1.jpg" alt="Image 3"></div>
       <div class="image category1"><img src="images/still life (2).jpg" alt="Image 4"></div>
-
+      <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
+      <div class="image category2"><img src="images/people  250px (5).jpg" alt="Image 2"></div>
     </div>
   </div>
 
@@ -234,17 +237,13 @@
 // Retrieve and set the active tab on page load
 document.addEventListener("DOMContentLoaded", function() {
   var defaultTab = localStorage.getItem("activeTab");
-  if (defaultTab) {
-    // Check if the stored activeTab is 'all' or one of the specific tabs
-    if (defaultTab === 'all') {
-      // Show all images tab
-      document.getElementById(defaultTab).click();
-    } else {
-      // Show specific tab
-      document.getElementById(defaultTab).click();
-    }
+  
+  // Check if there's a stored activeTab
+  if (defaultTab && document.getElementById(defaultTab)) {
+    // Click the stored activeTab to show its content
+    document.getElementById(defaultTab).click();
   } else {
-    // Default to 'all' tab on first load
+    // Default to 'all' tab on first load if no stored activeTab
     document.getElementById("defaultOpen").click();
   }
 });

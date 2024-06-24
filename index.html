@@ -12,10 +12,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="Js/external.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -186,43 +183,78 @@
     </button>
   </div>
 
-  <div class="container mt-5 d-flex justify-content-center mb-5 ">
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill"
-          data-bs-target="#pills-home" type="button" style="background-color: #3f117c;" role="tab"
-          aria-controls="pills-home" aria-selected="true">Home</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-          type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-profile"
-          aria-selected="false">Profile</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-          type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-contact"
-          aria-selected="false">Contact</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
-          type="button" style="background-color: #3f117c;" role="tab" aria-controls="pills-disabled"
-          aria-selected="false" disabled>Disabled</button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-        tabindex="0">...</div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...
-      </div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...
-      </div>
-      <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
-        ...</div>
+
+
+
+  <div class="container-fluid p-5 mt-5 text-dark text-center ">
+    <h1 style="font-size:4vw; font-family: 'Times New Roman', Times, serif;"><strong>Our Categories</strong></h1>
+    <div class="box-heading"><b>Art Gallery On Trending</b></div>
+    <br>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'tab1')">All</button>
+    <button class="tablinks" onclick="openTab(event, 'tab2')">People</button>
+    <button class="tablinks" onclick="openTab(event, 'tab3')">Still Life</button>
+    <button class="tablinks" onclick="openTab(event, 'tab4')">Tab 4</button>
+  </div>
+  
+  <div id="tab1" class="tabcontent">
+    <div class="image-grid">
+      <div class="image category1"><img src="images/abstract 265px  (1).jpeg" alt="Image 1"></div>
+      <div class="image category2"><img src="images/abstract 265px  (2).jpeg" alt="Image 2"></div>
+     
     </div>
+  </div>
+  
+  <div id="tab2" class="tabcontent">
+    <div class="image-grid">
+      <div class="image category3"><img src="images/abstract 265px  (3).jpeg" alt="Image 3"></div>
+      <div class="image category1"><img src="images/abstract 265px  (4).jpeg" alt="Image 4"></div>
+    
+    </div>
+  </div>
+  
+  <div id="tab3" class="tabcontent">
+    <div class="image-grid">
+      <div class="image category2"><img src="images/abstract 265px  (5).jpeg" alt="Image 5"></div>
+      <div class="image category3"><img src="images/abstract 265px  (6).jpeg" alt="Image 6"></div>
+      
+    </div>
+  </div>
+  
+  <div id="tab4" class="tabcontent">
+    <div class="image-grid">
+      <div class="image category1"><img src="images/abstract 265px  (7).jpeg" alt="Image 7"></div>
+      <div class="image category2"><img src="images/abstract 265px  (8).jpeg" alt="Image 8"></div>
+      
+    </div>
+  </div>
+  
 
   </div>
 
+<script>
+  
+function openTab(event, tabName) {
+  var i, tabcontent, tablinks;
+  
+ 
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("active");
+  }
+  
+  
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+  
 
+  document.getElementById(tabName).classList.add("active");
+  event.currentTarget.classList.add("active");
+}
+
+</script>
 
 
 
@@ -283,65 +315,134 @@
 
 
 
-    <!-- footer -->
-    <footer class="footer mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="logo col-md-3 ">
-            <img src="logo/galleria color logo.png" alt="galleria Logo" class="galleria-logo" width="200px"
-              height="70px">
-            <div class="contact-info mt-5">
-              <p><i class="fas fa-map-marker-alt"> <a href="#">Karachi, Pakistan</a></i>
-              </p>
-              <p><i class="fas fa-phone-alt"><a href="#">Phone: (0336) 228-8771</a></i>
-              </p>
-              <p><i class="fas fa-envelope"><a href="#">Email:
-                    info@galleria.com.pk</a></i>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 ">
-            <h5>OUR CATEGORIES</h5>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="abstract.html">Paintings</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 ">
-            <h5>USEFUL LINKS</h5>
-            <ul>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="faqs.html">FaQs</a></li>
-              <li><a href="#">Our Sitemap</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 ">
-            <h5>NEWSLETTER</h5>
-            <div class="newsletter">
-              <form id="newsletter-form">
-                <input type="email" id="newsletter-email" placeholder="Your email address" required>
-                <button class="btn btn-primary" style="margin-left: 250px;" type="button">Subscribe</button>
-              </form>
-            </div>
-            <div class="currency-selector">
-              <select class="form-control mt-3">
-                <option>United States (US) dollar ($) - USD</option>
-                <option>Euro (€) - EUR</option>
-                <option>British Pound (£) - GBP</option>
-              </select>
-            </div>
-          </div>
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary ">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="#" class="me-4 text-reset">
+        <i class="fa fa-google-plus-square" style="font-size:36px; color: red ;"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fa fa-facebook-square" style="font-size:36px; color: rgb(42, 42, 128);"></i>
+
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fa fa-instagram" style="font-size:36px; color: rgb(202, 25, 202);"></i>
+
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fa fa-youtube-play" style="font-size:36px;color: red ;"></i>
+
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fa fa-linkedin-square" style="font-size:36px; color:#037AB6;"></i>
+
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fa fa-github" style="font-size:36px;color: black;"></i>
+
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
         </div>
-      </div>
-      <div class="container justify-content-center">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Galleria</span></strong>. All Rights Reserved
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
         </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class='fas fa-map-marker-alt' style='font-size:24px'></i>
+            New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
       </div>
-    </footer>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
     <!-- cookies -->
     <div class="cookie-banner" id="cookieBanner">
       <p>We use cookies to improve your experience on our website. By browsing this website, you agree to our use of

@@ -133,77 +133,6 @@ margin-top: 60%;
   padding-top: 15px;
 }
 
-
-
-/* footer */
-
-.footer {
-  background-color: #ffffffd8;
-  padding: 40px 0;
-  border-top: 1px solid #a8a1a1c7;
-}
-
-.footer .contact-info p {
-  margin: 0;
-  padding: 5px;
-  font-size: 14px;
-  color: #000000;
-}
-
-.footer .contact-info p :hover {
-  color: #542999fd;
-  text-decoration: underline;
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer ul li {
-  margin-bottom: 10px;
-}
-
-.footer ul li a {
-  color: #542999fd;
-  text-decoration: none;
-}
-
-.footer ul li a:hover {
-  color: #542999fd;
-  text-decoration: underline;
-}
-
-.footer .newsletter input[type="email"] {
-  border: 2px solid #542999fd;
-  padding: 10px;
-  width: 100%;
-  max-width: 250px;
-}
-
-.footer .newsletter button {
-  background-color: #542999fd;
-  color: #ffffff;
-  border-radius: 3px solid white;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.footer .currency-selector select {
-  width: 100%;
-  max-width: 250px;
-  padding: 10px;
-  background-color: #fffffffd;
-  border: 3px solid #542999fd;
-  margin-top: 10px;
-}
-
-.footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-}
-
 #back-to-top {
   display: none;
   position: fixed;
@@ -280,3 +209,93 @@ margin-top: 60%;
 
 
 
+/* Style the tab buttons */
+.tab {
+
+ display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px; /* Optional: Add margin to separate tabs from content */
+}
+
+.tab button {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.tab button:hover {
+  background-color: #542999d0;
+}
+
+.tab button.active {
+  background-color: #542999d0;
+}
+
+/* Style the image grid */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  max-width: 1200px;
+}
+
+.image {
+  position: relative; /* Ensure position context for absolute overlay */
+
+  width: 265px;
+  height: 265px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+
+}
+.image:hover img {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+.image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+
+
+.image .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.image:hover .overlay-content {
+  opacity: 1; /* Show overlay content on hover */
+}
+/* Hide tab content by default */
+.tabcontent {
+  display: none;
+}
+
+/* Show the active tab */
+.tabcontent.active {
+  display: block;
+}

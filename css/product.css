@@ -228,106 +228,36 @@ body {
 
 @media (min-width:1201px) and (max-width:1255px) {}
 
-/* footer */
 
-.footer {
-  background-color: #ffffffd8;
-  padding: 40px 0;
-  border-top: 1px solid #a8a1a1c7;
-}
-
-.footer .contact-info p {
-  margin: 0;
-  padding: 5px;
-  font-size: 14px;
-  color: #000000;
-}
-
-.footer .contact-info p :hover {
-  color: #542999fd;
-  text-decoration: underline;
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer ul li {
-  margin-bottom: 10px;
-}
-
-.footer ul li a {
-  color: #542999fd;
-  text-decoration: none;
-}
-
-.footer ul li a:hover {
-  color: #542999fd;
-  text-decoration: underline;
-}
-
-.footer .newsletter input[type="email"] {
-  border: 2px solid #542999fd;
-  padding: 10px;
-  width: 100%;
-  max-width: 250px;
-}
-
-.footer .newsletter button {
-  background-color: #542999fd;
-  color: #ffffff;
-  border-radius: 3px solid white;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.footer .currency-selector select {
-  width: 100%;
-  max-width: 250px;
-  padding: 10px;
-  background-color: #fffffffd;
-  border: 3px solid #542999fd;
-  margin-top: 10px;
-}
-
-.footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-}
-
-/* styles.css */
 #back-to-top {
   display: none;
-  /* Hidden by default */
+  
   position: fixed;
-  /* Fixed position */
+  
   bottom: 20px;
-  /* Place the button 20px from the bottom */
+  
   right: 30px;
-  /* Place the button 30px from the right */
+  
   z-index: 99;
-  /* Make sure it does not overlap */
+ 
   border: none;
-  /* Remove borders */
+  
   outline: none;
-  /* Remove outline */
+ 
   background-color: #542999fd;
-  /* Black background */
+  
   color: white;
-  /* White text */
+  
   cursor: pointer;
-  /* Pointer/hand icon */
+ 
   padding: 15px;
-  /* Some padding */
+  
   border-radius: 10px;
-  /* Rounded corners */
+  
   font-size: 18px;
-  /* Increase font size */
+  
 }
 
 #back-to-top:hover {
   background-color: #542999d0;
-  /* Add a dark-grey background on hover */
 }

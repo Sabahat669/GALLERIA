@@ -20,10 +20,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+<!-- MDB -->
 
 
   <title>Galleria | Home</title>
   <style>
+    .colorbtn:hover{
+      background-color: #3f117c !important;
+      color: white !important;
+    }
     .carousel {
       margin-top: -100px;
 
@@ -36,6 +41,10 @@
 
     .btn-outline-warning {
       border: 2px solid white !important;
+      color: white!important;
+      background-color: #3f117c !important;
+      text-decoration: none !important;
+      
 
     }
 
@@ -64,17 +73,6 @@
 </head>
 
 <body>
-  <nav class="navbar bg-dark  mb-4">
-    <div class="container-fluid">
-      <p>Canvas to Home... <a href="cart.html">Enjoy 10% Off</a> On Your Favorite Artworks!🎊🎨</p>
-      <div class="login-register-btn">
-        <a href="loginform.html" style="text-decoration: none;">Login </a>
-      </div>
-      <div class="cart-btn">
-        <p><a href="cart.html"><i class="material-icons" style="font-size:25px">add_shopping_cart</i></a>0 / Rs0</p>
-      </div>
-    </div>
-  </nav>
 
   <nav class="navbar navbar-expand-lg  sticky-top" id="mainNavbar">
     <div class="container-fluid">
@@ -108,6 +106,9 @@
           <li class="nav-item">
             <a class="nav-link text-white ps-4" href="contact.html">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-4" href="loginform.html"><i class="fa fa-user me-2" style="font-size: 25px;"></i>Login/Signup</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -132,7 +133,7 @@
             piece. They journey through galleries and museums, absorbing the rich tapestry of human expression. With
             keen eyes and open hearts, they celebrate creativity and the stories it tells. For them, art is a timeless
             connection to the soul of humanity.
-          </p><button type="button" class="btn btn-outline-warning"><a href="abstract.html">Read More</a></button>
+          </p><button type="button colorbtn" style="text-decoration: none;" class="btn btn-outline-warning btn-lg"><a style="text-decoration: none; color: white;" href="abstract.html">Read More</a></button>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
@@ -146,7 +147,7 @@
             connect hearts through vibrant colors and profound expressions. Each piece tells a unique story, inviting
             viewers into a world of wonder. This shared experience fosters a deep appreciation for the beauty and
             diversity of artistic endeavors.</p>
-          <button type="button" class="btn btn-outline-warning"><a href="about.html">Explore</a>
+          <button type="button colorbtn" class="btn btn-outline-warning btn-lg"><a style="text-decoration: none; color: white;" href="about.html">Explore</a>
           </button>
         </div>
       </div>
@@ -160,7 +161,7 @@
             Art painting competitions ignite creativity and skill, showcasing diverse talents and perspectives.
             Participants blend technique with imagination, creating canvases that tell stories and evoke emotions.
             Such events celebrate art's transformative power, inspiring both artists and audiences alike.</p><button
-            type="button" class="btn btn-outline-warning"><a href="contact.html">Subscribe</a></button>
+            type="button colorbtn" class="btn btn-outline-warning btn-lg"><a style="text-decoration: none; color: white;" href="contact.html">Subscribe</a></button>
         </div>
       </div>
     </div>
@@ -174,108 +175,78 @@
     </button>
   </div>
 
-  <div class="container-fluid p-5 mt-5 text-dark text-center ">
-    <h1 style="font-size:4vw; font-family: 'Times New Roman', Times, serif;"><strong>Our Categories</strong></h1>
-    <div class="box-heading"><b>Art Gallery On Trending</b>
+
+
+
+
+
+
+<div class="container-fluid mt-5 mb-5">
+
+  <ul class="nav nav-pills mb-3 justify-content-center border-bottom " id="pills-tab" role="tablist">
+    <li class="nav-item " role="presentation">
+      <button class="nav-link text-dark bg-transparent colorbtn"  id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark bg-transparent colorbtn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">People</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark bg-transparent colorbtn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Street</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark bg-transparent colorbtn" id="pills-still-tab" data-bs-toggle="pill" data-bs-target="#pills-still" type="button" role="tab" aria-controls="pills-still" aria-selected="false">Still Life</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="image-grid">
+        <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
+        <div class="image category2"><img src="images/people  250px  (1).jpg" alt="Image 2"></div>
+        <div class="image category3"><img src="images/street art 1.jpg" alt="Image 3"></div>
+        <div class="image category1"><img src="images/still life (2).jpg" alt="Image 4"></div>
+        <div class="image category2"><img src="images/people  250px  (2).jpg" alt="Image 5"></div>
+        <div class="image category3"><img src="images/street art 2.jpg" alt="Image 6"></div>
+        <div class="image category1"><img src="images/still life (3).jpg" alt="Image 7"></div>
+        <div class="image category2"><img src="images/people  250px  (3).jpg" alt="Image 8"></div>
+      </div>
     </div>
-  </div>
-  <br>
-  <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'all')" id="defaultOpen">All</button>
-    <button class="tablinks" onclick="openTab(event, 'tab1')">People</button>
-    <button class="tablinks" onclick="openTab(event, 'tab2')">Street</button>
-    <button class="tablinks" onclick="openTab(event, 'tab3')">Still Life</button>
-
-  </div>
-
-  <div id="all" class="tabcontent">
-    <div class="image-grid">
-      <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
-      <div class="image category2"><img src="images/people  250px  (1).jpg" alt="Image 2"></div>
-      <div class="image category3"><img src="images/street art 1.jpg" alt="Image 3"></div>
-      <div class="image category1"><img src="images/still life (2).jpg" alt="Image 4"></div>
-      <div class="image category2"><img src="images/people  250px  (2).jpg" alt="Image 5"></div>
-      <div class="image category3"><img src="images/street art 2.jpg" alt="Image 6"></div>
-      <div class="image category1"><img src="images/still life (3).jpg" alt="Image 7"></div>
-      <div class="image category2"><img src="images/people  250px  (3).jpg" alt="Image 8"></div>
-    </div>
-  </div>
-
-  <div id="tab1" class="tabcontent">
-    <div class="image-grid">
-      <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
-      <div class="image category2"><img src="images/people  250px  (1).jpg" alt="Image 2"></div>
-      <div class="image category3"><img src="images/street art 6.jpg" alt="Image 3"></div>
-      <div class="image category1"><img src="images/still life (4).jpg" alt="Image 4"></div>
-
-    </div>
-  </div>
-
-  <div id="tab2" class="tabcontent">
-    <div class="image-grid">
-      <div class="image category3"><img src="images/street art 1.jpg" alt="Image 3"></div>
-      <div class="image category1"><img src="images/still life (2).jpg" alt="Image 4"></div>
-      <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
-      <div class="image category2"><img src="images/people  250px (5).jpg" alt="Image 2"></div>
-    </div>
-  </div>
-
-  <div id="tab3" class="tabcontent">
-    <div class="image-grid">
-      <div class="image category2"><img src="images/people  250px  (2).jpg" alt="Image 5"></div>
-      <div class="image category3"><img src="images/street art 2.jpg" alt="Image 6"></div>
-      <div class="image category1"><img src="images/still life (3).jpg" alt="Image 7"></div>
-      <div class="image category2"><img src="images/people  250px  (3).jpg" alt="Image 8"></div>
-
-    </div>
-  </div>
-
-
-
-
-  <script>
-// Retrieve and set the active tab on page load
-document.addEventListener("DOMContentLoaded", function() {
-  var defaultTab = localStorage.getItem("activeTab");
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="image-grid">
+        <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
+        <div class="image category2"><img src="images/people  250px  (1).jpg" alt="Image 2"></div>
+        <div class="image category3"><img src="images/street art 6.jpg" alt="Image 3"></div>
+        <div class="image category1"><img src="images/still life (4).jpg" alt="Image 4"></div>
   
-  // Check if there's a stored activeTab
-  if (defaultTab && document.getElementById(defaultTab)) {
-    // Click the stored activeTab to show its content
-    document.getElementById(defaultTab).click();
-  } else {
-    // Default to 'all' tab on first load if no stored activeTab
-    document.getElementById("defaultOpen").click();
-  }
-});
-
-// Function to switch between tabs
-function openTab(event, tabName) {
-  var i, tabcontent, tablinks;
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <div class="image-grid">
+        <div class="image category3"><img src="images/street art 1.jpg" alt="Image 3"></div>
+        <div class="image category1"><img src="images/still life (2).jpg" alt="Image 4"></div>
+        <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
+        <div class="image category2"><img src="images/people  250px (5).jpg" alt="Image 2"></div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-still" role="tabpanel" aria-labelledby="pills-still-tab">
+      <div class="image-grid">
+        <div class="image category2"><img src="images/people  250px  (2).jpg" alt="Image 5"></div>
+        <div class="image category3"><img src="images/street art 2.jpg" alt="Image 6"></div>
+        <div class="image category1"><img src="images/still life (3).jpg" alt="Image 7"></div>
+        <div class="image category2"><img src="images/people  250px  (3).jpg" alt="Image 8"></div>
   
-  // Hide all tab contents
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].classList.remove("active");
-  }
-  
-  // Deactivate all tab links
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active");
-  }
-  
-  // Show the clicked tab content and mark the button as active
-  document.getElementById(tabName).classList.add("active");
-  event.currentTarget.classList.add("active");
+      </div>
+    </div>
+  </div>
 
-  // Store the active tab in localStorage
-  localStorage.setItem("activeTab", tabName);
-}
-
-  </script>
+</div>
 
 
-  <!-- heading -->
+
+
+
+
+
+
 
   <div class="container-fluid p-5 text-dark text-center ">
     <h1 style="font-size:6vw">Gallery</h1>
@@ -395,16 +366,22 @@ function openTab(event, tabName) {
               Products
             </h6>
             <p>
-              <a href="PrivacyPolicy.html" class="text-tab" style="text-decoration: none;"><b>Privacy & Policy</b></a>
+              <a href="abstract.html" class="text-tab" style="text-decoration: none;"><b>Abstract</b></a>
             </p>
             <p>
-              <a href="#" class="text-tab" style="text-decoration: none;"><b>Settings</b></a>
+              <a href="landscape.html" class="text-tab" style="text-decoration: none;"><b>Landscape</b></a>
             </p>
             <p>
-              <a href="#" class="text-tab" style="text-decoration: none;"><b>Tracking Orders</b></a>
+              <a href="nature.html" class="text-tab" style="text-decoration: none;"><b>Nature</b></a>
             </p>
             <p>
-              <a href="#" class="text-tab" style="text-decoration: none;"><b>Help/Faqs</b></a>
+              <a href="flower.html" class="text-tab" style="text-decoration: none;"><b>Flower</b></a>
+            </p>
+            <p>
+              <a href="figurative.html" class="text-tab" style="text-decoration: none;"><b>Figurative</b></a>
+            </p>
+            <p>
+              <a href="religious.html" class="text-tab" style="text-decoration: none;"><b>Religious</b></a>
             </p>
           </div>
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

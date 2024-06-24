@@ -64,8 +64,6 @@
 </head>
 
 <body>
-
-  <!-- header -->
   <nav class="navbar bg-dark  mb-4">
     <div class="container-fluid">
       <p>Canvas to Home... <a href="shop.html">Enjoy 10% Off</a> On Your Favorite Artworks!🎊🎨</p>
@@ -78,10 +76,6 @@
     </div>
   </nav>
 
-
-
-
-  <!-- navbar -->
   <nav class="navbar navbar-expand-lg  sticky-top" id="mainNavbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="logo/w_logo.png" width="160px" height="50px" alt=""></a>
@@ -119,9 +113,6 @@
     </div>
   </nav>
 
-
-
-  <!-- carousel -->
   <div id="carouselExampleDark" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -183,79 +174,106 @@
     </button>
   </div>
 
-
-
-
   <div class="container-fluid p-5 mt-5 text-dark text-center ">
     <h1 style="font-size:4vw; font-family: 'Times New Roman', Times, serif;"><strong>Our Categories</strong></h1>
-    <div class="box-heading"><b>Art Gallery On Trending</b></div>
-    <br>
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'tab1')">All</button>
-      <button class="tablinks" onclick="openTab(event, 'tab2')">People</button>
-      <button class="tablinks" onclick="openTab(event, 'tab3')">Still Life</button>
-      <button class="tablinks" onclick="openTab(event, 'tab4')">Tab 4</button>
+    <div class="box-heading"><b>Art Gallery On Trending</b>
     </div>
-
-    <div id="tab1" class="tabcontent">
-      <div class="image-grid">
-        <div class="image category1"><img src="images/abstract 265px  (1).jpeg" alt="Image 1"></div>
-        <div class="image category2"><img src="images/abstract 265px  (2).jpeg" alt="Image 2"></div>
-
-      </div>
-    </div>
-
-    <div id="tab2" class="tabcontent">
-      <div class="image-grid">
-        <div class="image category3"><img src="images/abstract 265px  (3).jpeg" alt="Image 3"></div>
-        <div class="image category1"><img src="images/abstract 265px  (4).jpeg" alt="Image 4"></div>
-
-      </div>
-    </div>
-
-    <div id="tab3" class="tabcontent">
-      <div class="image-grid">
-        <div class="image category2"><img src="images/abstract 265px  (5).jpeg" alt="Image 5"></div>
-        <div class="image category3"><img src="images/abstract 265px  (6).jpeg" alt="Image 6"></div>
-
-      </div>
-    </div>
-
-    <div id="tab4" class="tabcontent">
-      <div class="image-grid">
-        <div class="image category1"><img src="images/abstract 265px  (7).jpeg" alt="Image 7"></div>
-        <div class="image category2"><img src="images/abstract 265px  (8).jpeg" alt="Image 8"></div>
-
-      </div>
-    </div>
-
+  </div>
+  <br>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'all')" id="defaultOpen">All</button>
+    <button class="tablinks" onclick="openTab(event, 'tab1')">People</button>
+    <button class="tablinks" onclick="openTab(event, 'tab2')">Street</button>
+    <button class="tablinks" onclick="openTab(event, 'tab3')">Still Life</button>
 
   </div>
 
+  <div id="all" class="tabcontent">
+    <div class="image-grid">
+      <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
+      <div class="image category2"><img src="images/people  250px  (1).jpg" alt="Image 2"></div>
+      <div class="image category3"><img src="images/street art 1.jpg" alt="Image 3"></div>
+      <div class="image category1"><img src="images/still life (2).jpg" alt="Image 4"></div>
+      <div class="image category2"><img src="images/people  250px  (2).jpg" alt="Image 5"></div>
+      <div class="image category3"><img src="images/street art 2.jpg" alt="Image 6"></div>
+      <div class="image category1"><img src="images/still life (3).jpg" alt="Image 7"></div>
+      <div class="image category2"><img src="images/people  250px  (3).jpg" alt="Image 8"></div>
+    </div>
+  </div>
+
+  <div id="tab1" class="tabcontent">
+    <div class="image-grid">
+      <div class="image category1"><img src="images/still life (1).jpg" alt="Image 1"></div>
+      <div class="image category2"><img src="images/people  250px  (1).jpg" alt="Image 2"></div>
+
+    </div>
+  </div>
+
+  <div id="tab2" class="tabcontent">
+    <div class="image-grid">
+      <div class="image category3"><img src="images/street art 1.jpg" alt="Image 3"></div>
+      <div class="image category1"><img src="images/still life (2).jpg" alt="Image 4"></div>
+
+    </div>
+  </div>
+
+  <div id="tab3" class="tabcontent">
+    <div class="image-grid">
+      <div class="image category2"><img src="images/people  250px  (2).jpg" alt="Image 5"></div>
+      <div class="image category3"><img src="images/street art 2.jpg" alt="Image 6"></div>
+      <div class="image category1"><img src="images/still life (3).jpg" alt="Image 7"></div>
+      <div class="image category2"><img src="images/people  250px  (3).jpg" alt="Image 8"></div>
+
+    </div>
+  </div>
+
+
+
+
   <script>
-
-    function openTab(event, tabName) {
-      var i, tabcontent, tablinks;
-
-
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active");
-      }
-
-
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-      }
-
-
-      document.getElementById(tabName).classList.add("active");
-      event.currentTarget.classList.add("active");
+// Retrieve and set the active tab on page load
+document.addEventListener("DOMContentLoaded", function() {
+  var defaultTab = localStorage.getItem("activeTab");
+  if (defaultTab) {
+    // Check if the stored activeTab is 'all' or one of the specific tabs
+    if (defaultTab === 'all') {
+      // Show all images tab
+      document.getElementById(defaultTab).click();
+    } else {
+      // Show specific tab
+      document.getElementById(defaultTab).click();
     }
+  } else {
+    // Default to 'all' tab on first load
+    document.getElementById("defaultOpen").click();
+  }
+});
+
+// Function to switch between tabs
+function openTab(event, tabName) {
+  var i, tabcontent, tablinks;
+  
+  // Hide all tab contents
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("active");
+  }
+  
+  // Deactivate all tab links
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+  
+  // Show the clicked tab content and mark the button as active
+  document.getElementById(tabName).classList.add("active");
+  event.currentTarget.classList.add("active");
+
+  // Store the active tab in localStorage
+  localStorage.setItem("activeTab", tabName);
+}
 
   </script>
-
 
 
   <!-- heading -->
@@ -269,31 +287,31 @@
 
 
 
-  <!-- Gallery -->
+
   <div class="row">
     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img src="images/index botttom/download.webp" class="w-100 shadow-1-strong rounded mb-4"
+      <img src="images/landscape 1600x500 bck.jpg" class="w-100 shadow-1-strong rounded mb-4"
         alt="Boat on Calm Water" />
 
-      <img src="images/index botttom/b.jpg" class="w-100 shadow-1-strong rounded mb-4"
+      <img src="images/gallery pic  (7).jpg" class="w-100 shadow-1-strong rounded mb-4"
         alt="Wintry Mountain Landscape" />
     </div>
 
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img src="images/index botttom/c.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+    <div class="col-lg-4 mb-4 mb-lg-0 ">
+      <img src="images/gallery pic 2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
 
-      <img src="images/index botttom/d" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+      <img src="images/figuravtive 1600x500 bck.jpg" class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water" />
     </div>
 
     <div class="col-lg-4 mb-4 mb-lg-0">
-      <img src="images/index botttom/e.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+      <img src="images/gallery pic  (5).jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
 
-      <img src="images/index botttom/f.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+      <img src="images/still life (1).jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
     </div>
   </div>
 
 
-  <!-- back-to-top -->
   <button id="back-to-top" title="Go to top"><i class="material-icons">palette</i></button>
   <script>
     let mybutton = document.getElementById("back-to-top");
@@ -314,7 +332,7 @@
 
 
 
-  <footer class="text-center text-lg-start bg-body-tertiary ">
+  <footer class="text-center text-lg-start bg-body-tertiary mt-5 ">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <div class="me-5 d-none d-lg-block ">
         <span>Get connected with us on social networks:</span>
@@ -341,9 +359,9 @@
       </div>
     </section>
     <section class="footer-tab">
-      <div class="container text-center text-md-start mt-5">
+      <div class="footer-galleria text-center text-md-start mt-5">
 
-        <div class="row mt-3">
+        <div class="row mt-3 mx-5">
 
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
@@ -412,7 +430,7 @@
       <a class="text-reset fw-bold" href="index.html">Galleria</a>
     </div>
   </footer>
-  <!-- cookies -->
+
   <div class="cookie-banner" id="cookieBanner">
     <p>We use cookies to improve your experience on our website. By browsing this website, you agree to our use of
       cookies. <a href="#">MORE INFO</a></p>
@@ -424,16 +442,16 @@
       document.getElementById('cookieBanner').style.display = 'none';
     }
   </script>
- <script>
-  window.addEventListener('scroll', function () {
-    var navbar = document.getElementById("mainNavbar");
-    if (window.scrollY > 50) {
-      navbar.classList.add("navbar-colored");
-    } else {
-      navbar.classList.remove("navbar-colored");
-    }
-  });
-</script>
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.getElementById("mainNavbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("navbar-colored");
+      } else {
+        navbar.classList.remove("navbar-colored");
+      }
+    });
+  </script>
 
 
 

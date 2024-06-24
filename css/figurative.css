@@ -73,3 +73,14 @@ body {
   background-color: #542999d0;
   
 }
+/* footer */
+.footer-tab p{
+  font-size: 17px;
+  text-decoration: none;
+}
+.footer-tab p a{
+color:#542999 ;
+}
+.footer-tab p a:hover{
+  color: #542999d0;
+}
